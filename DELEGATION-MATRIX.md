@@ -29,6 +29,7 @@ This is a fast-lookup reference. The full architectural rationale lives in `KEVI
 | "lease a credential / use AIRTABLE_PAT for X" | **Vault** (when exists) / **Kevin self** (today) | ⏳ Kevin holds | self: source secrets.env, use directly |
 | "review this draft for quality" | **Edith** | ⏳ stand up 5/9 | `openclaw agent --agent edith --message "review <path>"` |
 | "watch logs / detect anomalies" | **Argus** | ⏳ stand up 5/15 | `openclaw agent --agent argus --message "<query>"` |
+| "score against rubric / phase check / bench output" | **Themis** | ✅ active (provisioned 2026-05-08) | email: themis-67m0uolroyetgaeny4g@bot.hyperagent.email OR Telegram: @ThemisJudgeBot |
 | "turn lights on/off" / "play Apple TV" / "set thermostat" / "trigger HomeKit scene" | **Hestia** | ❌ Phase 4+ (Kevin handles natively today as interim) | `openclaw agent --agent hestia --message "<command>"` (when stood up) |
 | "architectural decision / debug post-mortem / system design" | **Daedalus** | ⏳ Phase 1 ingest until 5/13 (don't invoke until then) | Telegram: @DaedalusForgeBot |
 | "audit fleet / coach a pattern / weekly review" | **Atlas** | ⏳ Phase 1 ingest until 5/12 (don't invoke until then) | Telegram: @AtlasFleetBot |
