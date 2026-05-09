@@ -16,7 +16,7 @@ Atlas Phase 3 coaching role: enforce this discipline as the fleet evolves. Daeda
 
 **Kevin = boss. Holds NO sensitive credentials. Knows the team. Routes work. Reports status up.**
 
-The current state (2026-05-07) has Kevin holding 31 credentials in `~/.openclaw/secrets.env` while also being the operator-facing voice AND running scripts that consume those credentials. That's a single point of compromise: if Kevin's filesystem is compromised, every API key, mailer password, GitHub PAT, Sanity write token, Airtable PAT — all of it falls.
+The current state (2026-05-08) has Kevin holding credentials in `~/.openclaw/secrets.env` while also being the operator-facing voice AND running scripts that consume those credentials. That's a single point of compromise: if Kevin's filesystem is compromised, every API key, mailer password, GitHub PAT, Sanity write token, Airtable PAT — all of it falls.
 
 The target state separates concerns by domain:
 - Kevin coordinates and reports; holds nothing sensitive
@@ -47,6 +47,7 @@ Status as of 2026-05-07 evening:
 | **Mailer** ⭐NEW | Outgoing fleet email | KEVIN_APP_PASSWORD only | ❌ Kevin handles today; carve out in Phase 3 |
 | **PR-poster** ⭐NEW | Sanity publish, P&P pipeline | SANITY_TOKEN_MC only | ❌ Kevin/Bridge handle today; carve out in Phase 3 |
 | **Sourcer** ⭐MAYBE | Vendor / talent / partner research for Wave Shade etc. | None (research-only) | ❌ Phase 4 if needed |
+| **Themis** ⭐NEW | Judge — rubric scoring | None | ✅ provisioned 2026-05-08 (HyperAgent cloud, mythology-aligned) |
 | **Hestia** ⭐NEW | Smart home control (Cync, Apple TV, HomeKit, climate, music routing) | Smart-home APIs only | ❌ Phase 4+ — small fast local model, skill-driven |
 
 **Other openclaw cli agent slots that exist** (per `openclaw agents list`): `blake`, `sage`, `echo`. Their personas/purposes are TBD; they may become Vault, Scraper, Mailer, PR-poster slots when those agents are designed, or get repurposed for new roles.
